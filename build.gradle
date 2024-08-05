@@ -21,8 +21,12 @@ test {
 }
 jar{
     manifest{
+        duplicatesStrategy=DuplicatesStrategy.EXCLUDE
         attributes(
                 'Main-Class':'com.scaler.Main'
         )
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
     }
 }

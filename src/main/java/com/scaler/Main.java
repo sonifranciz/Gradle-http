@@ -1,6 +1,6 @@
 package com.scaler;
 import com.scaler.greetings.Greetings;
-import main.java.com.scaler.http.Client;
+import com.scaler.http.Client;
 public class Main {
     public static void main(String[] args) {
 
@@ -8,7 +8,7 @@ public class Main {
         System.out.println(g.greet());
 
         Client client= new Client();
-        String repsonse= client.get("https://www.youtube.com/");
+        String repsonse= client.get("https://www.google.com");
         System.out.println(repsonse);
         System.out.println("Hello world!");
     }

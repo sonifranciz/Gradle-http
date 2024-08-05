@@ -1,4 +1,5 @@
-package main.java.com.scaler.http;
+package com.scaler.http;
+
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
